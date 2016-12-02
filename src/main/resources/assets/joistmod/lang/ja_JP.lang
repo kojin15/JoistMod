@@ -1,0 +1,9 @@
+
+tile.VanilaWoodJoist_0.name=オークの梁
+tile.VanilaWoodJoist_1.name=マツの梁
+tile.VanilaWoodJoist_2.name=シラカバの梁
+tile.VanilaWoodJoist_3.name=ジャングルの梁
+tile.VanilaWoodJoist_4.name=アカシアの梁
+tile.VanilaWoodJoist_5.name=ダークオークの梁
+
+itemGroup.joistmod=梁mod

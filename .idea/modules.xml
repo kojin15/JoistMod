@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JoistMod.iml" filepath="$PROJECT_DIR$/.idea/modules/JoistMod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JoistMod_api.iml" filepath="$PROJECT_DIR$/.idea/modules/JoistMod_api.iml" group="JoistMod" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JoistMod_main.iml" filepath="$PROJECT_DIR$/.idea/modules/JoistMod_main.iml" group="JoistMod" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JoistMod_test.iml" filepath="$PROJECT_DIR$/.idea/modules/JoistMod_test.iml" group="JoistMod" />
+    </modules>
+  </component>
+</project>
