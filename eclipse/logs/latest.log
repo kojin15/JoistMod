@@ -1,32 +1,50 @@
-[22:08:50] [main/INFO]: Setting user: Player385
-[22:08:52] [Client thread/INFO]: LWJGL Version: 2.9.1
-[22:09:06] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:JoistMod
-[22:09:07] [Sound Library Loader/INFO]: Sound engine started
-[22:09:09] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[22:09:09] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[22:09:09] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:JoistMod
-[22:09:10] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[22:09:10] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[22:09:11] [Sound Library Loader/INFO]: Sound engine started
-[22:09:20] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[22:09:20] [Server thread/INFO]: Generating keypair
-[22:09:21] [Server thread/INFO]: Converting map!
-[22:09:21] [Server thread/INFO]: Scanning folders...
-[22:09:21] [Server thread/INFO]: Total conversion count is 0
-[22:09:22] [Server thread/INFO]: Preparing start region for level 0
-[22:09:22] [Server thread/INFO]: Changing view distance to 12, from 10
-[22:09:23] [Server thread/INFO]: Player385[local:E:2da81b9d] logged in with entity id 0 at (394.5, 4.0, 172.5)
-[22:09:23] [Server thread/INFO]: Player385 joined the game
-[22:09:30] [Server thread/INFO]: Player385 has just earned the achievement [Taking Inventory]
-[22:09:30] [Client thread/INFO]: [CHAT] Player385 has just earned the achievement [Taking Inventory]
-[22:09:38] [Server thread/INFO]: Saving and pausing game...
-[22:09:38] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[22:09:38] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[22:09:38] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[22:09:38] [Server thread/INFO]: Stopping server
-[22:09:38] [Server thread/INFO]: Saving players
-[22:09:38] [Server thread/INFO]: Saving worlds
-[22:09:38] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[22:09:39] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[22:09:39] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[22:09:41] [Client thread/INFO]: Stopping!
+[23:41:42] [main/INFO]: Setting user: Player430
+[23:41:44] [Client thread/INFO]: LWJGL Version: 2.9.1
+[23:41:56] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:JoistMod
+[23:41:56] [Sound Library Loader/INFO]: Sound engine started
+[23:41:58] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[23:41:58] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[23:41:59] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:JoistMod
+[23:41:59] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[23:41:59] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[23:42:00] [Sound Library Loader/INFO]: Sound engine started
+[23:42:05] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[23:42:05] [Server thread/INFO]: Generating keypair
+[23:42:05] [Server thread/INFO]: Preparing start region for level 0
+[23:42:06] [Server thread/INFO]: Changing view distance to 12, from 10
+[23:42:07] [Server thread/INFO]: Player430[local:E:9572cadf] logged in with entity id 277 at (383.8476185873454, 4.0, 185.48116694652958)
+[23:42:07] [Server thread/INFO]: Player430 joined the game
+[23:42:08] [Server thread/INFO]: Saving and pausing game...
+[23:42:08] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[23:42:08] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[23:42:08] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[23:42:08] [Client thread/FATAL]: Unreported exception thrown!
+java.lang.ArrayIndexOutOfBoundsException: 10
+	at kojin15.joistmod.block.JoistBlock.getIcon(JoistBlock.java:76) ~[JoistBlock.class:?]
+	at net.minecraft.block.Block.getIcon(Block.java:645) ~[Block.class:?]
+	at net.minecraft.client.renderer.RenderBlocks.getBlockIcon(RenderBlocks.java:8446) ~[RenderBlocks.class:?]
+	at net.minecraft.client.renderer.RenderBlocks.renderStandardBlockWithAmbientOcclusionPartial(RenderBlocks.java:5418) ~[RenderBlocks.class:?]
+	at net.minecraft.client.renderer.RenderBlocks.renderStandardBlock(RenderBlocks.java:4427) ~[RenderBlocks.class:?]
+	at kojin15.joistmod.Render.RenderJoistBlock.renderWorldBlock(RenderJoistBlock.java:82) ~[RenderJoistBlock.class:?]
+	at cpw.mods.fml.client.registry.RenderingRegistry.renderWorldBlock(RenderingRegistry.java:118) ~[RenderingRegistry.class:?]
+	at net.minecraft.src.FMLRenderAccessLibrary.renderWorldBlock(FMLRenderAccessLibrary.java:53) ~[FMLRenderAccessLibrary.class:?]
+	at net.minecraft.client.renderer.RenderBlocks.renderBlockByRenderType(RenderBlocks.java:389) ~[RenderBlocks.class:?]
+	at net.minecraft.client.renderer.WorldRenderer.updateRenderer(WorldRenderer.java:207) ~[WorldRenderer.class:?]
+	at net.minecraft.client.renderer.RenderGlobal.updateRenderers(RenderGlobal.java:1618) ~[RenderGlobal.class:?]
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1263) ~[EntityRenderer.class:?]
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1087) ~[EntityRenderer.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1067) ~[Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:962) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_92]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_92]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_92]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_92]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
+	at GradleStart.main(Unknown Source) [start/:?]
+[23:42:08] [Server thread/INFO]: Stopping server
+[23:42:08] [Server thread/INFO]: Saving players
+[23:42:08] [Client Shutdown Thread/INFO]: Stopping server
+[23:42:08] [Client Shutdown Thread/INFO]: Saving players
