@@ -10,6 +10,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
@@ -50,7 +51,12 @@ public class JoistModRegister {
         GameRegistry.addRecipe(new ItemStack(JoistModRegister.VanilaWoodJoist,8,5),"A A","ABA","A A",
                 'A',new ItemStack(Blocks.planks,1,5),'B',new ItemStack(Blocks.log2,1,1));
 
-        //GameRegistry.addRecipe(new ItemStack(JoistModRegister.StoneSaw, 1, 0),"");
+        GameRegistry.addRecipe(new ItemStack(JoistModRegister.StoneSaw, 1, 0),"  A"," B ","C  ",
+                'A', Items.stone_axe, 'B',Blocks.cobblestone, 'C',Items.stick);
+        GameRegistry.addRecipe(new ItemStack(JoistModRegister.IronSaw, 1, 0),"  A"," B ","C  ",
+                'A', Items.iron_axe, 'B',Items.iron_ingot, 'C',Items.stick);
+        GameRegistry.addRecipe(new ItemStack(JoistModRegister.DiamondSaw, 1, 0),"  A"," B ","C  ",
+                'A', Items.diamond_axe, 'B',Items.diamond, 'C',Items.stick);
 
     }
 }
