@@ -6,4 +6,8 @@ tile.VanilaWoodJoist_3.name=ジャングルの梁
 tile.VanilaWoodJoist_4.name=アカシアの梁
 tile.VanilaWoodJoist_5.name=ダークオークの梁
 
+item.StoneSaw.name=石の鋸
+item.IronSaw.name=鉄の鋸
+item.DiamondSaw.name=ダイヤモンドの鋸
+
 itemGroup.joistmod=梁mod

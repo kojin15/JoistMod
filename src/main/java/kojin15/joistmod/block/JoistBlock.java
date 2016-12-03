@@ -12,6 +12,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -21,7 +22,7 @@ public class JoistBlock extends Block {
 
     public JoistBlock(Material p_i45394_1_, int maxMeta) {
         super(p_i45394_1_);
-        icons = new IIcon[maxMeta];
+        icons = new IIcon[maxMeta * 2];
         this.setHardness(2.0F);
         this.setResistance(5.0F);
         this.setBlockName("VanilaWoodJoist");
@@ -44,23 +45,35 @@ public class JoistBlock extends Block {
     public boolean renderAsNormalBlock() { return false; }
 
     @Override
-    public int damageDropped(int p_149692_1_) {
-        return p_149692_1_;
+    public int damageDropped(int damage) {
+        int meta;
+        if(damage >= 6){
+            meta = damage - 6;
+        }
+        else {
+            meta = damage;
+        }
+        return meta;
     }
 
     @Override
     public void getSubBlocks(Item p_149666_1_, CreativeTabs p_149666_2_, List p_149666_3_) {
-        for (int i = 0; i < icons.length; i++) {
+        for (int i = 0; i < icons.length / 2; i++) {
             p_149666_3_.add(new ItemStack(p_149666_1_, 1, i));
         }
+
     }
 
     @Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister p_149651_1_) {
-        for (int i = 0; i < icons.length; i++){
+        for (int i = 0; i < icons.length / 2; i++){
             icons[i] = p_149651_1_.registerIcon(this.getTextureName()+"_"+i);
         }
+        for (int i = 0; i < icons.length / 2; i++){
+            icons[i + 6] = p_149651_1_.registerIcon(this.getTextureName()+"_"+i);
+        }
+
     }
 
     @Override

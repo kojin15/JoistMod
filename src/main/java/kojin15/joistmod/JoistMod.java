@@ -13,7 +13,7 @@ import kojin15.joistmod.Render.RenderJoistBlock;
 @Mod(modid = JoistMod.ModID,version = JoistMod.Version,useMetadata = true)
 public class JoistMod {
     public static final String ModID = "JoistMod";
-    public static final String Version = "1.0.0-stable";
+    public static final String Version = "1.1.0-stable";
 
     public static int RenderID;
 

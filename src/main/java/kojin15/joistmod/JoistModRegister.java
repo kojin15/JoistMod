@@ -4,6 +4,7 @@ package kojin15.joistmod;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import kojin15.joistmod.block.JoistBlock;
+import kojin15.joistmod.item.ItemSaw;
 import kojin15.joistmod.item.MetaItemBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -23,9 +24,18 @@ public class JoistModRegister {
 
     public static final Block VanilaWoodJoist = new JoistBlock(Material.wood, 6);
 
+    public static final Item StoneSaw = new ItemSaw(Item.ToolMaterial.STONE, "StoneSaw", "stonesaw");
+    public static final Item IronSaw = new ItemSaw(Item.ToolMaterial.IRON, "IronSaw", "ironsaw");
+    public static final Item DiamondSaw = new ItemSaw(Item.ToolMaterial.EMERALD, "DiamondSaw", "diamondsaw");
+
+
     static void RegisterPreinit(FMLPreInitializationEvent event){
 
         GameRegistry.registerBlock(VanilaWoodJoist, MetaItemBlock.class ,"VanilaWoodJoist");
+
+        GameRegistry.registerItem(StoneSaw, "StoneSaw");
+        GameRegistry.registerItem(IronSaw, "IronSaw");
+        GameRegistry.registerItem(DiamondSaw, "DiamondSaw");
 
         GameRegistry.addRecipe(new ItemStack(JoistModRegister.VanilaWoodJoist,8,0),"A A","ABA","A A",
                 'A',new ItemStack(Blocks.planks,1,0),'B',new ItemStack(Blocks.log,1,0));
@@ -39,6 +49,8 @@ public class JoistModRegister {
                 'A',new ItemStack(Blocks.planks,1,4),'B',new ItemStack(Blocks.log2,1,0));
         GameRegistry.addRecipe(new ItemStack(JoistModRegister.VanilaWoodJoist,8,5),"A A","ABA","A A",
                 'A',new ItemStack(Blocks.planks,1,5),'B',new ItemStack(Blocks.log2,1,1));
+
+        //GameRegistry.addRecipe(new ItemStack(JoistModRegister.StoneSaw, 1, 0),"");
 
     }
 }

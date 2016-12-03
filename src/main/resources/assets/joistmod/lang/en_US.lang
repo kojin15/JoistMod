@@ -6,4 +6,8 @@ tile.VanilaWoodJoist_3.name=Jungle Wood Joist
 tile.VanilaWoodJoist_4.name=Acacia Wood Joist
 tile.VanilaWoodJoist_5.name=Dark Oak Wood Joist
 
+item.StoneSaw.name=StoneSaw
+item.IronSaw.name=IronSaw
+item.DiamondSaw.name=DiamondSaw
+
 itemGroup.joistmod=Joist Mod

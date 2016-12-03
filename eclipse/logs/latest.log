@@ -1,39 +1,38 @@
-[23:41:42] [main/INFO]: Setting user: Player430
-[23:41:44] [Client thread/INFO]: LWJGL Version: 2.9.1
-[23:41:56] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:JoistMod
-[23:41:56] [Sound Library Loader/INFO]: Sound engine started
-[23:41:58] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[23:41:58] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[23:41:59] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:JoistMod
-[23:41:59] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[23:41:59] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[23:42:00] [Sound Library Loader/INFO]: Sound engine started
-[23:42:05] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[23:42:05] [Server thread/INFO]: Generating keypair
-[23:42:05] [Server thread/INFO]: Preparing start region for level 0
-[23:42:06] [Server thread/INFO]: Changing view distance to 12, from 10
-[23:42:07] [Server thread/INFO]: Player430[local:E:9572cadf] logged in with entity id 277 at (383.8476185873454, 4.0, 185.48116694652958)
-[23:42:07] [Server thread/INFO]: Player430 joined the game
-[23:42:08] [Server thread/INFO]: Saving and pausing game...
-[23:42:08] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[23:42:08] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[23:42:08] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[23:42:08] [Client thread/FATAL]: Unreported exception thrown!
-java.lang.ArrayIndexOutOfBoundsException: 10
-	at kojin15.joistmod.block.JoistBlock.getIcon(JoistBlock.java:76) ~[JoistBlock.class:?]
-	at net.minecraft.block.Block.getIcon(Block.java:645) ~[Block.class:?]
-	at net.minecraft.client.renderer.RenderBlocks.getBlockIcon(RenderBlocks.java:8446) ~[RenderBlocks.class:?]
-	at net.minecraft.client.renderer.RenderBlocks.renderStandardBlockWithAmbientOcclusionPartial(RenderBlocks.java:5418) ~[RenderBlocks.class:?]
-	at net.minecraft.client.renderer.RenderBlocks.renderStandardBlock(RenderBlocks.java:4427) ~[RenderBlocks.class:?]
-	at kojin15.joistmod.Render.RenderJoistBlock.renderWorldBlock(RenderJoistBlock.java:82) ~[RenderJoistBlock.class:?]
-	at cpw.mods.fml.client.registry.RenderingRegistry.renderWorldBlock(RenderingRegistry.java:118) ~[RenderingRegistry.class:?]
-	at net.minecraft.src.FMLRenderAccessLibrary.renderWorldBlock(FMLRenderAccessLibrary.java:53) ~[FMLRenderAccessLibrary.class:?]
-	at net.minecraft.client.renderer.RenderBlocks.renderBlockByRenderType(RenderBlocks.java:389) ~[RenderBlocks.class:?]
-	at net.minecraft.client.renderer.WorldRenderer.updateRenderer(WorldRenderer.java:207) ~[WorldRenderer.class:?]
-	at net.minecraft.client.renderer.RenderGlobal.updateRenderers(RenderGlobal.java:1618) ~[RenderGlobal.class:?]
-	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1263) ~[EntityRenderer.class:?]
-	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1087) ~[EntityRenderer.class:?]
-	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1067) ~[Minecraft.class:?]
+[19:53:22] [main/INFO]: Setting user: Player197
+[19:53:25] [Client thread/INFO]: LWJGL Version: 2.9.1
+[19:53:36] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:JoistMod
+[19:53:37] [Sound Library Loader/INFO]: Sound engine started
+[19:53:38] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[19:53:38] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[19:53:38] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:JoistMod
+[19:53:39] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[19:53:39] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[19:53:40] [Sound Library Loader/INFO]: Sound engine started
+[19:53:51] [Client thread/ERROR]: Exception reading .\saves\New World\level.dat
+net.minecraft.util.ReportedException: Loading NBT data
+	at net.minecraft.nbt.NBTTagCompound.func_152449_a(NBTTagCompound.java:503) ~[NBTTagCompound.class:?]
+	at net.minecraft.nbt.NBTTagCompound.func_152446_a(NBTTagCompound.java:56) ~[NBTTagCompound.class:?]
+	at net.minecraft.nbt.NBTTagList.func_152446_a(NBTTagList.java:59) ~[NBTTagList.class:?]
+	at net.minecraft.nbt.NBTTagCompound.func_152449_a(NBTTagCompound.java:494) ~[NBTTagCompound.class:?]
+	at net.minecraft.nbt.NBTTagCompound.func_152446_a(NBTTagCompound.java:56) ~[NBTTagCompound.class:?]
+	at net.minecraft.nbt.NBTTagCompound.func_152449_a(NBTTagCompound.java:494) ~[NBTTagCompound.class:?]
+	at net.minecraft.nbt.NBTTagCompound.func_152446_a(NBTTagCompound.java:56) ~[NBTTagCompound.class:?]
+	at net.minecraft.nbt.CompressedStreamTools.func_152455_a(CompressedStreamTools.java:179) ~[CompressedStreamTools.class:?]
+	at net.minecraft.nbt.CompressedStreamTools.func_152456_a(CompressedStreamTools.java:134) ~[CompressedStreamTools.class:?]
+	at net.minecraft.nbt.CompressedStreamTools.readCompressed(CompressedStreamTools.java:37) ~[CompressedStreamTools.class:?]
+	at net.minecraft.world.storage.SaveFormatOld.getWorldInfo(SaveFormatOld.java:82) [SaveFormatOld.class:?]
+	at net.minecraft.world.chunk.storage.AnvilSaveConverter.getSaveList(AnvilSaveConverter.java:64) [AnvilSaveConverter.class:?]
+	at net.minecraft.client.gui.GuiSelectWorld.func_146627_h(GuiSelectWorld.java:80) [GuiSelectWorld.class:?]
+	at net.minecraft.client.gui.GuiSelectWorld.initGui(GuiSelectWorld.java:58) [GuiSelectWorld.class:?]
+	at net.minecraft.client.gui.GuiScreen.setWorldAndResolution(GuiScreen.java:294) [GuiScreen.class:?]
+	at net.minecraft.client.Minecraft.displayGuiScreen(Minecraft.java:865) [Minecraft.class:?]
+	at net.minecraft.client.gui.GuiMainMenu.actionPerformed(GuiMainMenu.java:260) [GuiMainMenu.class:?]
+	at net.minecraft.client.gui.GuiScreen.mouseClicked(GuiScreen.java:252) [GuiScreen.class:?]
+	at net.minecraft.client.gui.GuiMainMenu.mouseClicked(GuiMainMenu.java:566) [GuiMainMenu.class:?]
+	at net.minecraft.client.gui.GuiScreen.handleMouseInput(GuiScreen.java:344) [GuiScreen.class:?]
+	at net.minecraft.client.gui.GuiScreen.handleInput(GuiScreen.java:313) [GuiScreen.class:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1731) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1039) [Minecraft.class:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:962) [Minecraft.class:?]
 	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_92]
@@ -44,7 +43,35 @@ java.lang.ArrayIndexOutOfBoundsException: 10
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
 	at GradleStart.main(Unknown Source) [start/:?]
-[23:42:08] [Server thread/INFO]: Stopping server
-[23:42:08] [Server thread/INFO]: Saving players
-[23:42:08] [Client Shutdown Thread/INFO]: Stopping server
-[23:42:08] [Client Shutdown Thread/INFO]: Saving players
+Caused by: java.util.zip.ZipException: invalid distance too far back
+	at java.util.zip.InflaterInputStream.read(InflaterInputStream.java:164) ~[?:1.8.0_92]
+	at java.util.zip.GZIPInputStream.read(GZIPInputStream.java:117) ~[?:1.8.0_92]
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246) ~[?:1.8.0_92]
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265) ~[?:1.8.0_92]
+	at java.io.DataInputStream.readInt(DataInputStream.java:390) ~[?:1.8.0_92]
+	at net.minecraft.nbt.NBTTagInt.func_152446_a(NBTTagInt.java:31) ~[NBTTagInt.class:?]
+	at net.minecraft.nbt.NBTTagCompound.func_152449_a(NBTTagCompound.java:494) ~[NBTTagCompound.class:?]
+	... 32 more
+[19:53:53] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[19:53:53] [Server thread/INFO]: Generating keypair
+[19:53:53] [Server thread/INFO]: Preparing start region for level 0
+[19:53:54] [Server thread/INFO]: Changing view distance to 12, from 10
+[19:53:55] [Server thread/INFO]: Player197[local:E:ed4b1bf4] logged in with entity id 182 at (842.4218605215025, 4.0, 1.284760302242543)
+[19:53:55] [Server thread/INFO]: Player197 joined the game
+[19:54:04] [Server thread/INFO]: [Player197: Set own game mode to Creative Mode]
+[19:54:04] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[19:54:05] [Server thread/INFO]: Player197 has just earned the achievement [Taking Inventory]
+[19:54:05] [Client thread/INFO]: [CHAT] Player197 has just earned the achievement [Taking Inventory]
+[19:54:34] [Server thread/INFO]: [Player197: Set own game mode to Survival Mode]
+[19:54:34] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[19:55:24] [Server thread/INFO]: Saving and pausing game...
+[19:55:24] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[19:55:24] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[19:55:24] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[19:55:24] [Server thread/INFO]: Stopping server
+[19:55:24] [Server thread/INFO]: Saving players
+[19:55:24] [Server thread/INFO]: Saving worlds
+[19:55:24] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[19:55:25] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[19:55:25] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[19:57:33] [Client thread/INFO]: Stopping!

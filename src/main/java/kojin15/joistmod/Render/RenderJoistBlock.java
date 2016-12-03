@@ -70,35 +70,69 @@ public class RenderJoistBlock implements ISimpleBlockRenderingHandler {
             renderer.setRenderBounds(0.25D, 0.25D, 0.25D, 0.75D, 0.75D, 0.75D);
             renderer.renderStandardBlock(block, x, y, z);
 
-            if (world.getBlock(x, y + 1, z) == JoistModRegister.VanilaWoodJoist) {
-                renderer.setRenderBounds(0.25D, 0.75D, 0.25D, 0.75D, 1.0D, 0.75D);
-                renderer.renderStandardBlock(block, x, y, z);
+            if (world.getBlockMetadata(x, y, z) < 6){
+                if (world.getBlock(x, y + 1, z) == JoistModRegister.VanilaWoodJoist) {
+                    renderer.setRenderBounds(0.25D, 0.75D, 0.25D, 0.75D, 1.0D, 0.75D);
+                    renderer.renderStandardBlock(block, x, y, z);
+                }
+
+                if (world.getBlock(x, y - 1, z) == JoistModRegister.VanilaWoodJoist) {
+                    renderer.setRenderBounds(0.25D, 0.0D, 0.25D, 0.75D, 0.25D, 0.75D);
+                    renderer.renderStandardBlock(block, x, y, z);
+                }
+
+                if (world.getBlock(x + 1, y, z) == JoistModRegister.VanilaWoodJoist) {
+                    renderer.setRenderBounds(0.75D, 0.25D, 0.25D, 1.0D, 0.75D, 0.75D);
+                    renderer.renderStandardBlock(block, x, y, z);
+                }
+
+                if (world.getBlock(x - 1, y, z) == JoistModRegister.VanilaWoodJoist) {
+                    renderer.setRenderBounds(0.0D, 0.25D, 0.25D, 0.25D, 0.75D, 0.75D);
+                    renderer.renderStandardBlock(block, x, y, z);
+                }
+
+                if (world.getBlock(x, y, z + 1) == JoistModRegister.VanilaWoodJoist) {
+                    renderer.setRenderBounds(0.25D, 0.25D, 0.75D, 0.75D, 0.75D, 1.0D);
+                    renderer.renderStandardBlock(block, x, y, z);
+                }
+
+                if (world.getBlock(x, y, z - 1) == JoistModRegister.VanilaWoodJoist) {
+                    renderer.setRenderBounds(0.25D, 0.25D, 0.0D, 0.75D, 0.75D, 0.25D);
+                    renderer.renderStandardBlock(block, x, y, z);
+                }
             }
 
-            if (world.getBlock(x, y - 1, z) == JoistModRegister.VanilaWoodJoist) {
+            if (world.getBlockMetadata(x, y, z) >= 6){
                 renderer.setRenderBounds(0.25D, 0.0D, 0.25D, 0.75D, 0.25D, 0.75D);
                 renderer.renderStandardBlock(block, x, y, z);
+
+                if (world.getBlock(x, y + 1, z) == JoistModRegister.VanilaWoodJoist) {
+                    renderer.setRenderBounds(0.25D, 0.75D, 0.25D, 0.75D, 1.0D, 0.75D);
+                    renderer.renderStandardBlock(block, x, y, z);
+                }
+
+                if (world.getBlock(x + 1, y, z) == JoistModRegister.VanilaWoodJoist) {
+                    renderer.setRenderBounds(0.75D, 0.25D, 0.25D, 1.0D, 0.75D, 0.75D);
+                    renderer.renderStandardBlock(block, x, y, z);
+                }
+
+                if (world.getBlock(x - 1, y, z) == JoistModRegister.VanilaWoodJoist) {
+                    renderer.setRenderBounds(0.0D, 0.25D, 0.25D, 0.25D, 0.75D, 0.75D);
+                    renderer.renderStandardBlock(block, x, y, z);
+                }
+
+                if (world.getBlock(x, y, z + 1) == JoistModRegister.VanilaWoodJoist) {
+                    renderer.setRenderBounds(0.25D, 0.25D, 0.75D, 0.75D, 0.75D, 1.0D);
+                    renderer.renderStandardBlock(block, x, y, z);
+                }
+
+                if (world.getBlock(x, y, z - 1) == JoistModRegister.VanilaWoodJoist) {
+                    renderer.setRenderBounds(0.25D, 0.25D, 0.0D, 0.75D, 0.75D, 0.25D);
+                    renderer.renderStandardBlock(block, x, y, z);
+                }
             }
 
-            if (world.getBlock(x + 1, y, z) == JoistModRegister.VanilaWoodJoist) {
-                renderer.setRenderBounds(0.75D, 0.25D, 0.25D, 1.0D, 0.75D, 0.75D);
-                renderer.renderStandardBlock(block, x, y, z);
-            }
 
-            if (world.getBlock(x - 1, y, z) == JoistModRegister.VanilaWoodJoist) {
-                renderer.setRenderBounds(0.0D, 0.25D, 0.25D, 0.25D, 0.75D, 0.75D);
-                renderer.renderStandardBlock(block, x, y, z);
-            }
-
-            if (world.getBlock(x, y, z + 1) == JoistModRegister.VanilaWoodJoist) {
-                renderer.setRenderBounds(0.25D, 0.25D, 0.75D, 0.75D, 0.75D, 1.0D);
-                renderer.renderStandardBlock(block, x, y, z);
-            }
-
-            if (world.getBlock(x, y, z - 1) == JoistModRegister.VanilaWoodJoist) {
-                renderer.setRenderBounds(0.25D, 0.25D, 0.0D, 0.75D, 0.75D, 0.25D);
-                renderer.renderStandardBlock(block, x, y, z);
-            }
 
             return true;
         }
