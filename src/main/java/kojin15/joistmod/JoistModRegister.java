@@ -3,6 +3,7 @@ package kojin15.joistmod;
 
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
+import kojin15.joistmod.block.BlockhalfR;
 import kojin15.joistmod.block.JoistBlock;
 import kojin15.joistmod.item.ItemSaw;
 import kojin15.joistmod.item.MetaItemBlock;
@@ -25,6 +26,8 @@ public class JoistModRegister {
 
     public static final Block VanilaWoodJoist = new JoistBlock(Material.wood, 6);
 
+    public static final Block StonehalfR = new BlockhalfR(Material.rock);
+
     public static final Item StoneSaw = new ItemSaw(Item.ToolMaterial.STONE, "StoneSaw", "stonesaw");
     public static final Item IronSaw = new ItemSaw(Item.ToolMaterial.IRON, "IronSaw", "ironsaw");
     public static final Item DiamondSaw = new ItemSaw(Item.ToolMaterial.EMERALD, "DiamondSaw", "diamondsaw");
@@ -33,6 +36,8 @@ public class JoistModRegister {
     static void RegisterPreinit(FMLPreInitializationEvent event){
 
         GameRegistry.registerBlock(VanilaWoodJoist, MetaItemBlock.class ,"VanilaWoodJoist");
+
+        GameRegistry.registerBlock(StonehalfR, "Stone 1/2 R");
 
         GameRegistry.registerItem(StoneSaw, "StoneSaw");
         GameRegistry.registerItem(IronSaw, "IronSaw");

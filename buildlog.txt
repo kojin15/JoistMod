@@ -17,7 +17,7 @@ Tasks to be executed: [task ':compileApiJava', task ':processApiResources', task
 :compileApiJava
 Skipping task ':compileApiJava' as it has no source files.
 :compileApiJava UP-TO-DATE
-:compileApiJava (Thread[main,5,main]) completed. Took 0.032 secs.
+:compileApiJava (Thread[main,5,main]) completed. Took 0.031 secs.
 :processApiResources (Thread[main,5,main]) started.
 :processApiResources
 Skipping task ':processApiResources' as it has no source files.
@@ -30,9 +30,9 @@ Skipping task ':apiClasses' as it has no actions.
 :apiClasses (Thread[main,5,main]) completed. Took 0.0 secs.
 :sourceMainJava (Thread[main,5,main]) started.
 :sourceMainJava
-Skipping task ':sourceMainJava' as it is up-to-date (took 0.062 secs).
+Skipping task ':sourceMainJava' as it is up-to-date (took 0.063 secs).
 :sourceMainJava UP-TO-DATE
-:sourceMainJava (Thread[main,5,main]) completed. Took 0.062 secs.
+:sourceMainJava (Thread[main,5,main]) completed. Took 0.063 secs.
 :compileJava (Thread[main,5,main]) started.
 :compileJava
 Failed to get resource: GET. [HTTP HTTP/1.1 403 Forbidden: https://libraries.minecraft.net//forgeSrc/1.7.10-10.13.4.1558-1.7.10/forgeSrc-1.7.10-10.13.4.1558-1.7.10.pom]
@@ -40,14 +40,14 @@ Failed to get resource: GET. [HTTP HTTP/1.1 403 Forbidden: https://libraries.min
 Failed to get resource: GET. [HTTP HTTP/1.1 403 Forbidden: https://libraries.minecraft.net/org/scala-lang/scala-swing_2.11/1.0.1/scala-swing_2.11-1.0.1.pom]
 Failed to get resource: GET. [HTTP HTTP/1.1 403 Forbidden: https://libraries.minecraft.net/org/scala-lang/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2.pom]
 file or directory 'C:\modding\JoistMod\libs', not found
-Skipping task ':compileJava' as it is up-to-date (took 5.692 secs).
+Skipping task ':compileJava' as it is up-to-date (took 2.406 secs).
 :compileJava UP-TO-DATE
-:compileJava (Thread[main,5,main]) completed. Took 5.692 secs.
+:compileJava (Thread[main,5,main]) completed. Took 2.406 secs.
 :processResources (Thread[main,5,main]) started.
 :processResources
 Skipping task ':processResources' as it is up-to-date (took 0.016 secs).
 :processResources UP-TO-DATE
-:processResources (Thread[main,5,main]) completed. Took 0.046 secs.
+:processResources (Thread[main,5,main]) completed. Took 0.032 secs.
 :classes (Thread[main,5,main]) started.
 :classes
 Skipping task ':classes' as it has no actions.
@@ -55,9 +55,10 @@ Skipping task ':classes' as it has no actions.
 :classes (Thread[main,5,main]) completed. Took 0.0 secs.
 :jar (Thread[main,5,main]) started.
 :jar
-Skipping task ':jar' as it is up-to-date (took 0.032 secs).
-:jar UP-TO-DATE
-:jar (Thread[main,5,main]) completed. Took 0.032 secs.
+Executing task ':jar' (up-to-date check took 0.016 secs) due to:
+  Output file C:\modding\JoistMod\build\libs\JoistMod-1.1.0-stable.jar has changed.
+  Output file C:\modding\JoistMod\build\libs\JoistMod-1.1.0-stable.jar has been removed.
+:jar (Thread[main,5,main]) completed. Took 0.171 secs.
 :compileTestJava (Thread[main,5,main]) started.
 :compileTestJava
 Skipping task ':compileTestJava' as it has no source files.
@@ -78,34 +79,35 @@ Skipping task ':testClasses' as it has no actions.
 file or directory 'C:\modding\JoistMod\build\classes\test', not found
 Skipping task ':test' as it has no source files.
 :test UP-TO-DATE
-:test (Thread[main,5,main]) completed. Took 0.015 secs.
+:test (Thread[main,5,main]) completed. Took 0.0 secs.
 :extractMcpData (Thread[main,5,main]) started.
 :extractMcpData
-Skipping task ':extractMcpData' as it is up-to-date (took 0.0 secs).
+Skipping task ':extractMcpData' as it is up-to-date (took 0.016 secs).
 :extractMcpData UP-TO-DATE
-:extractMcpData (Thread[main,5,main]) completed. Took 0.0 secs.
+:extractMcpData (Thread[main,5,main]) completed. Took 0.016 secs.
 :getVersionJson (Thread[main,5,main]) started.
 :getVersionJson
 Executing task ':getVersionJson' (up-to-date check took 0.0 secs) due to:
   Task has not declared any outputs.
-:getVersionJson (Thread[main,5,main]) completed. Took 0.61 secs.
+:getVersionJson (Thread[main,5,main]) completed. Took 0.485 secs.
 :extractUserDev (Thread[main,5,main]) started.
 :extractUserDev
 Failed to get resource: GET. [HTTP HTTP/1.1 403 Forbidden: https://libraries.minecraft.net/net/minecraftforge/forge/1.7.10-10.13.4.1558-1.7.10/forge-1.7.10-10.13.4.1558-1.7.10.pom]
-Skipping task ':extractUserDev' as it is up-to-date (took 1.875 secs).
+Skipping task ':extractUserDev' as it is up-to-date (took 1.062 secs).
 :extractUserDev UP-TO-DATE
-:extractUserDev (Thread[main,5,main]) completed. Took 1.875 secs.
+:extractUserDev (Thread[main,5,main]) completed. Took 1.062 secs.
 :genSrgs (Thread[main,5,main]) started.
 :genSrgs
 Skipping task ':genSrgs' as task onlyIf is false.
 :genSrgs SKIPPED
-:genSrgs (Thread[main,5,main]) completed. Took 0.344 secs.
+:genSrgs (Thread[main,5,main]) completed. Took 0.328 secs.
 :reobf (Thread[main,5,main]) started.
 :reobf
 Executing task ':reobf' (up-to-date check took 0.0 secs) due to:
-  No history is available.
+  Output file C:\modding\JoistMod\build\libs\JoistMod-1.1.0-stable.jar has changed.
+  Output file C:\modding\JoistMod\build\libs\JoistMod-1.1.0-stable.jar has changed.
 file or directory 'C:\modding\JoistMod\libs', not found
-:reobf (Thread[main,5,main]) completed. Took 1.453 secs.
+:reobf (Thread[main,5,main]) completed. Took 1.563 secs.
 :assemble (Thread[main,5,main]) started.
 :assemble
 Skipping task ':assemble' as it has no actions.
@@ -114,7 +116,7 @@ Skipping task ':assemble' as it has no actions.
 :check
 Skipping task ':check' as it has no actions.
 :check UP-TO-DATE
-:check (Thread[main,5,main]) completed. Took 0.0 secs.
+:check (Thread[main,5,main]) completed. Took 0.016 secs.
 :build (Thread[main,5,main]) started.
 :build
 Skipping task ':build' as it has no actions.
@@ -122,4 +124,4 @@ Skipping task ':build' as it has no actions.
 
 BUILD SUCCESSFUL
 
-Total time: 21.444 secs
+Total time: 13.642 secs

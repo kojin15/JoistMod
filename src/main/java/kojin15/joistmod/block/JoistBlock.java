@@ -12,7 +12,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 
-import java.util.ArrayList;
 import java.util.List;
 
 
@@ -34,7 +33,7 @@ public class JoistBlock extends Block {
     }
     @Override
     public int getRenderType(){
-        return JoistMod.RenderID;
+        return JoistMod.JoistRenderID;
     }
 
     public boolean isOpaqueCube()

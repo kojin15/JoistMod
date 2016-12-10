@@ -151,7 +151,7 @@ public class RenderJoistBlock implements ISimpleBlockRenderingHandler {
     @Override
     public int getRenderId() {
 
-        return JoistMod.RenderID;
+        return JoistMod.JoistRenderID;
     }
 
 }
